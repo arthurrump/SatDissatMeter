@@ -1,0 +1,22 @@
+{
+  "private": true,
+  "scripts": {
+    "postinstall": "dotnet tool restore",
+    "start": "dotnet fable watch src --run webpack-dev-server",
+    "build": "dotnet fable src && webpack"
+  },
+  "devDependencies": {
+    "copy-webpack-plugin": "^9.0.1",
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^5.4.0",
+    "mini-css-extract-plugin": "^2.4.2",
+    "path": "^0.12.7",
+    "webpack": "^5.58.2",
+    "webpack-cli": "^4.9.1",
+    "webpack-dev-server": "^4.3.1"
+  },
+  "version": "1.0.0",
+  "dependencies": {
+    "lit": "^2.0.2"
+  }
+}
